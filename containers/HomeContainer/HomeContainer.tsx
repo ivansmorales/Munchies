@@ -16,6 +16,7 @@ export const HomeContainer = () => {
   return (
     <div>
       <button onClick={() => onSubmit(data)}>Generate PDF</button>
+      <GeneratePdf data={data} />
     </div>
   );
 };
