@@ -5,7 +5,7 @@ import { styles } from "./GeneratePdfStyles";
 export const GeneratePdf = ({ data }: any) => {
   return (
     <Document>
-      <Page wrap size="A4" style={styles.page}>
+      <Page wrap={false} size="A4" style={styles.page}>
         <View style={styles.section}>
           <Image src="/template.png" style={styles.pageBackground} />
         </View>
