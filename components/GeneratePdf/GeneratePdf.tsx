@@ -1,10 +1,10 @@
 import React from "react";
-import ReactPDF, { Image, Page, Text, View } from "@react-pdf/renderer";
+import { Document, Image, Page, Text, View } from "@react-pdf/renderer";
 import { styles } from "./GeneratePdfStyles";
 
 export const GeneratePdf = ({ data }: any) => {
   return (
-    <ReactPDF.Document>
+    <Document>
       <Page wrap size="A4" style={styles.page}>
         <View style={styles.section}>
           <Image src="/template.png" style={styles.pageBackground} />
@@ -16,6 +16,6 @@ export const GeneratePdf = ({ data }: any) => {
           </View>
         </View>
       </Page>
-    </ReactPDF.Document>
+    </Document>
   );
 };
